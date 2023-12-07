@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .nav-bar {
@@ -16,8 +16,8 @@ header {
   align-items: center;
 }
 .logo img {
-  width: 68px;
-  height: 32px;
+  width: 200px;
+  object-fit: contain;
 }
 .right-bar {
   display: flex;
@@ -75,6 +75,13 @@ header {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
+.bigHead{
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 2rem;
+  font-weight: 700;
+}
 .about-card p{
   font-weight: 400;
   font-size: 15px;
@@ -95,6 +102,7 @@ header {
 }
 .team-card img{
   height: 327px;
+  object-fit: cover;
 }
 .custom-container{
   max-width: 1180px;
@@ -254,4 +262,80 @@ span.qodef-bg-effect {
 .hero-content a:hover span.qodef-bg-effect {
   width: 100%;
   transition: .2s ease-out;
+}
+
+.hero-slider-main{
+  position: relative;
+}
+.hero-content-slider {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  margin-left: auto;
+  background: #ffff;
+  z-index: 80;
+  padding: 32px 0 0 77px;
+  box-sizing: border-box;
+}
+.slider-content h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(112,112,112,.43);
+  line-height: 25px;
+}
+.slider-content h2 {
+  margin: 12px 0 6px;
+  color: rgba(0,0,0,.43);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.slider-content a {
+    display: inline-flex;
+    font-size: 13px;
+    font-style: italic;
+    flex-wrap: wrap;
+    font-weight: 300;
+    color: rgba(112,112,112,.43);
+    text-decoration: none;
+}
+.mySwiper3 .swiper-slide{
+  cursor: pointer;
+}
+.mySwiper3 .swiper-slide-active .slider-content h2, .mySwiper3 .swiper-slide-active .slider-content h5{
+  color: #000;
+}
+.image-card, .team-card {
+  overflow: hidden;
+  position: relative;
+}
+.image-card:hover img, .team-card:hover img {
+  transform: scale(1.03);
+}
+.image-card img, .team-card img {
+  transform: scale(1);
+  transition: transform 1s;
+  cursor: pointer;
+}
+.news-section {
+  padding: 40px 0;
+}
+.news-section .image-card img{
+  height: 222px;
+  object-fit: cover;
+}
+
+.news-section .image-card span.date {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 23px;
 }
