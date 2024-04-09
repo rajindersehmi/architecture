@@ -36,10 +36,10 @@ header {
 .social-links-header {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 7%;
+  left: 2%;
   z-index: 5;
   gap: 20px;
 }
